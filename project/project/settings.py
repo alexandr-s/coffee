@@ -86,3 +86,9 @@ class Development(Base):
 
 class Production(Base):
     """Конфигурация окружения Production."""
+
+
+class Test(Base):
+    """Конфигурация окружения Production."""
+
+    SECRET_KEY = "testing"

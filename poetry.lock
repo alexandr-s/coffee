@@ -489,6 +489,21 @@ tomli = {version = ">=1.0.0", markers = "python_version < \"3.11\""}
 testing = ["argcomplete", "attrs (>=19.2.0)", "hypothesis (>=3.56)", "mock", "nose", "pygments (>=2.7.2)", "requests", "xmlschema"]
 
 [[package]]
+name = "pytest-django"
+version = "4.5.2"
+description = "A Django plugin for pytest."
+category = "dev"
+optional = false
+python-versions = ">=3.5"
+
+[package.dependencies]
+pytest = ">=5.4.0"
+
+[package.extras]
+docs = ["sphinx", "sphinx-rtd-theme"]
+testing = ["django", "django-configurations (>=2.0)"]
+
+[[package]]
 name = "pytest-factoryboy"
 version = "2.5.1"
 description = "Factory Boy support for pytest."
@@ -655,7 +670,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "c34837a2c6f966e012c2db5131bcd45de3c58e29a40f629df4feabdbc18ba3b5"
+content-hash = "3241394d48709dbd872bccbf2b70be0eeeee88353318a96377babeab7973f7b9"
 
 [metadata.files]
 aiohttp = []
@@ -701,6 +716,7 @@ pycodestyle = []
 pyflakes = []
 pylint = []
 pytest = []
+pytest-django = []
 pytest-factoryboy = []
 python-dateutil = [
     {file = "python-dateutil-2.8.2.tar.gz", hash = "sha256:0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86"},
