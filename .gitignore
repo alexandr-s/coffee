@@ -152,6 +152,9 @@ cython_debug/
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+.idea/**/poetry.xml
+.idea/**/misc.xml
+.idea/**/project-template.iml
 
 # AWS User-specific
 .idea/**/aws.xml
@@ -249,7 +252,6 @@ fabric.properties
 
 # Poetry local configuration file - https://python-poetry.org/docs/configuration/#local-configuration
 poetry.toml
-.idea/**/poetry.xml
 
 # ruff
 .ruff_cache/
