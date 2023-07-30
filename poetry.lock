@@ -184,6 +184,17 @@ search = ["dj-search-url"]
 testing = ["django-cache-url (>=1.0.0)", "dj-database-url", "dj-email-url", "dj-search-url"]
 
 [[package]]
+name = "django-extensions"
+version = "3.2.1"
+description = "Extensions for Django"
+category = "dev"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+Django = ">=3.2"
+
+[[package]]
 name = "django-rest-framework"
 version = "0.1.0"
 description = "alias."
@@ -470,6 +481,33 @@ spelling = ["pyenchant (>=3.2,<4.0)"]
 testutils = ["gitpython (>3)"]
 
 [[package]]
+name = "pylint-django"
+version = "2.5.3"
+description = "A Pylint plugin to help Pylint understand the Django web framework"
+category = "dev"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+pylint = ">=2.0,<3"
+pylint-plugin-utils = ">=0.7"
+
+[package.extras]
+for_tests = ["django-tables2", "factory-boy", "coverage", "pytest", "wheel", "django-tastypie", "pylint (>=2.13)"]
+with_django = ["django"]
+
+[[package]]
+name = "pylint-plugin-utils"
+version = "0.7"
+description = "Utilities and helpers for writing Pylint plugins"
+category = "dev"
+optional = false
+python-versions = ">=3.6.2"
+
+[package.dependencies]
+pylint = ">=1.7"
+
+[[package]]
 name = "pytest"
 version = "7.3.1"
 description = "pytest: simple powerful testing with Python"
@@ -670,7 +708,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "3241394d48709dbd872bccbf2b70be0eeeee88353318a96377babeab7973f7b9"
+content-hash = "3cf512312e047cfba0e41c70cc289d8bf7e0e6870aac9d2cea0c0877cf0ac600"
 
 [metadata.files]
 aiohttp = []
@@ -690,6 +728,7 @@ colorama = []
 dill = []
 django = []
 django-configurations = []
+django-extensions = []
 django-rest-framework = []
 django-stubs = []
 django-stubs-ext = []
@@ -715,6 +754,8 @@ pluggy = []
 pycodestyle = []
 pyflakes = []
 pylint = []
+pylint-django = []
+pylint-plugin-utils = []
 pytest = []
 pytest-django = []
 pytest-factoryboy = []

@@ -82,6 +82,7 @@ class Development(Base):
     """Конфигурация окружения Development."""
 
     DEBUG = values.BooleanValue(True)
+    INSTALLED_APPS = Base.INSTALLED_APPS + ['django_extensions', ]
 
 
 class Production(Base):
@@ -89,6 +90,6 @@ class Production(Base):
 
 
 class Test(Base):
-    """Конфигурация окружения Production."""
+    """Конфигурация окружения Test."""
 
     SECRET_KEY = "testing"
