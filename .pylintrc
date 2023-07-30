@@ -2,4 +2,4 @@
 ignore=migrations
 load-plugins=pylint_django,pylint_django.checkers.migrations
 django-settings-module=project.settings
-init-hook="import runpy; runpy.run_path('./project/utils/pylint_init_hook.py');'"
+init-hook="import runpy; runpy.run_path('./project/utils/pylint_init_hook.py');"
