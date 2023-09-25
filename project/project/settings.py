@@ -21,6 +21,10 @@ class Base(Configuration):
         "django.contrib.sessions",
         "django.contrib.messages",
         "django.contrib.staticfiles",
+
+        "rangefilter",
+
+        "apps.coffee"
     ]
     MIDDLEWARE = [
         "django.middleware.security.SecurityMiddleware",
